@@ -76,15 +76,15 @@ function App() {
         </Sider>
         <HashRouter>        
             <Routes>
-              <Route exact path='/' element={<Main/>}></Route>
-              <Route exact path='/devices' element={<Devices/>}></Route>
-              <Route path='/devices/add' element={<Add/>}></Route>
-              <Route exact path='/plan' element={<Plan/>}></Route>
-              <Route path='/employees' element={<Employees/>}></Route>
-              <Route path='/setting' element={<Setting/>}></Route>
-              <Route path='/help' element={<Help/>}></Route>
-              <Route path='/off' element={<Off/>}></Route>
-              <Route exact path='/*' element={<Error/>}></Route>
+              <Route exact path='/test' element={<Main/>}></Route>
+              <Route exact path='/test/devices' element={<Devices/>}></Route>
+              <Route path='/test/devices/add' element={<Add/>}></Route>
+              <Route exact path='/test/plan' element={<Plan/>}></Route>
+              <Route path='/test/employees' element={<Employees/>}></Route>
+              <Route path='/test/setting' element={<Setting/>}></Route>
+              <Route path='/test/help' element={<Help/>}></Route>
+              <Route path='/test/off' element={<Off/>}></Route>
+              <Route exact path='/test/*' element={<Error/>}></Route>
             </Routes>
           </HashRouter>
       </Layout>
