@@ -33,7 +33,7 @@ function Devices(children) {
             }}
           >
             <h1><b>Приборы</b></h1>
-            <Button type="primary"style={{width: '51vh',  fontSize: '90%',}} size='large'><Link to="#/devices/add">Добавить оборудование</Link></Button>
+            <Button type="primary"style={{width: '51vh',  fontSize: '90%',}} size='large'><a href="#/devices/add">Добавить оборудование</a></Button>
           </div>
         </Content>
       </Layout>
