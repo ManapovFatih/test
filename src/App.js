@@ -1,5 +1,5 @@
 import './App.css';
-import {HashRouter as Router, Routes, Route} from 'react-router-dom';
+import {HashRouter, Routes, Route} from 'react-router-dom';
 import Devices from './Devices';
 import Add from './add';
 import Plan from './Plan';
