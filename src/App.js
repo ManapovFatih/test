@@ -77,13 +77,13 @@ function App() {
         <Router>        
             <Routes>
               <Route exact path='/' element={<Main/>}></Route>
-              <Route exact path='/devices/' element={<Devices/>}></Route>
-              <Route path='/devices/add/' element={<Add/>}></Route>
-              <Route exact path='/plan/' element={<Plan/>}></Route>
-              <Route path='/employees/' element={<Employees/>}></Route>
-              <Route path='/setting/' element={<Setting/>}></Route>
-              <Route path='/help/' element={<Help/>}></Route>
-              <Route path='/off/' element={<Off/>}></Route>
+              <Route exact path='/devices' element={<Devices/>}></Route>
+              <Route path='/devices/add' element={<Add/>}></Route>
+              <Route exact path='/plan' element={<Plan/>}></Route>
+              <Route path='/employees' element={<Employees/>}></Route>
+              <Route path='/setting' element={<Setting/>}></Route>
+              <Route path='/help' element={<Help/>}></Route>
+              <Route path='/off' element={<Off/>}></Route>
               <Route exact path='/*' element={<Error/>}></Route>
             </Routes>
           </Router>
