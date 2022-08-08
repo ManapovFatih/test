@@ -29,19 +29,19 @@ function getItem(label, icon) {
 }
 const items1 = [
   getItem(<p style={{fontSize: '86%', color: '#757295',}}>Главное меню</p>),
-  getItem(<a href="/" style={{color: '#757295',}}>Личный кабинет</a>, <img src={UserIcon} alt=''/>),
-  getItem(<a href="/devices" style={{color: '#757295',}}>Приборы</a>, <img src={warehouse} alt=''/>),
-  getItem(<a href="/plan" style={{color: '#757295',}}>Планирование</a>, <img src={Vector1} alt=''/>),
-  getItem( <a href="/employees" style={{color: '#757295',}}>Сотрудники</a>, <img src={Vector2} alt=''/>),
+  getItem(<a href="#/" style={{color: '#757295',}}>Личный кабинет</a>, <img src={UserIcon} alt=''/>),
+  getItem(<a href="#/devices" style={{color: '#757295',}}>Приборы</a>, <img src={warehouse} alt=''/>),
+  getItem(<a href="#/plan" style={{color: '#757295',}}>Планирование</a>, <img src={Vector1} alt=''/>),
+  getItem( <a href="#/employees" style={{color: '#757295',}}>Сотрудники</a>, <img src={Vector2} alt=''/>),
 ];
 const items2 = [
   getItem(<p style={{fontSize: '86%', color: '#757295',}}>Система</p>),
-  getItem( <a href="/setting" style={{color: '#757295',}}>Настройки</a>, <img src={Vector3} alt=''/>),
-  getItem( <a href="/help" style={{color: '#757295',}}>Помощь</a>, <img src={Vector4} alt=''/>),
+  getItem( <a href="#/setting" style={{color: '#757295',}}>Настройки</a>, <img src={Vector3} alt=''/>),
+  getItem( <a href="#/help" style={{color: '#757295',}}>Помощь</a>, <img src={Vector4} alt=''/>),
 ];
 
 const items3 = [
-  getItem( <a href="/off" style={{color: '#757295',}}>Выйти</a>, <img src={Vector}  alt=''/> ),
+  getItem( <a href="#/off" style={{color: '#757295',}}>Выйти</a>, <img src={Vector}  alt=''/> ),
 ];
 function App() {
   return (
@@ -76,15 +76,15 @@ function App() {
         </Sider>
         <HashRouter>        
             <Routes>
-              <Route exact path='/test' element={<Main/>}></Route>
-              <Route exact path='/test/devices' element={<Devices/>}></Route>
-              <Route path='/test/devices/add' element={<Add/>}></Route>
-              <Route exact path='/test/plan' element={<Plan/>}></Route>
-              <Route path='/test/employees' element={<Employees/>}></Route>
-              <Route path='/test/setting' element={<Setting/>}></Route>
-              <Route path='/test/help' element={<Help/>}></Route>
-              <Route path='/test/off' element={<Off/>}></Route>
-              <Route exact path='/test/*' element={<Error/>}></Route>
+              <Route exact path='/' element={<Main/>}></Route>
+              <Route exact path='/devices' element={<Devices/>}></Route>
+              <Route path='/devices/add' element={<Add/>}></Route>
+              <Route exact path='/plan' element={<Plan/>}></Route>
+              <Route path='/employees' element={<Employees/>}></Route>
+              <Route path='/setting' element={<Setting/>}></Route>
+              <Route path='/help' element={<Help/>}></Route>
+              <Route path='/off' element={<Off/>}></Route>
+              <Route exact path='/*' element={<Error/>}></Route>
             </Routes>
           </HashRouter>
       </Layout>
