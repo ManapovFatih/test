@@ -74,7 +74,7 @@ function App() {
           ></div>
           <Menu mode="inline" items={items3}/>
         </Sider>
-        <Router>        
+        <HashRouter>        
             <Routes>
               <Route exact path='/' element={<Main/>}></Route>
               <Route exact path='/devices' element={<Devices/>}></Route>
@@ -86,7 +86,7 @@ function App() {
               <Route path='/off' element={<Off/>}></Route>
               <Route exact path='/*' element={<Error/>}></Route>
             </Routes>
-          </Router>
+          </HashRouter>
       </Layout>
     </>
   );
